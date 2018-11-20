@@ -23,4 +23,9 @@ export class NavbarComponent implements OnInit {
     window.location.href = '/';
   }
 
+  buscar(valor:any){
+    console.log(valor.value);
+
+  }
+
 }

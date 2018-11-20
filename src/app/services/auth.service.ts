@@ -46,6 +46,11 @@ export class AuthService {
     localStorage.setItem('access_token', authResult.accessToken);
     localStorage.setItem('id_token', authResult.idToken);
     localStorage.setItem('expires_at', expiresAt);
+    localStorage.setItem('idowner', '5bf0a80851dcec0e84c941c9' );
+  }
+
+  public getId(): any {
+    return localStorage.getItem('idowner');
   }
 
   public logout(): void {

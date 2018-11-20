@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http'
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -17,6 +19,7 @@ import { AgrmodtierraComponent } from './components/agrmodtierra/agrmodtierra.co
 import { AdministrarTierraComponent } from './components/administrar-tierra/administrar-tierra.component';
 import { AgrmodrecursosComponent } from './components/agrmodrecursos/agrmodrecursos.component';
 import { ContratosComponent } from './components/contratos/contratos.component';
+import { PerfiltierraComponent } from './components/perfiltierra/perfiltierra.component';
 
 
 @NgModule({
@@ -33,11 +36,14 @@ import { ContratosComponent } from './components/contratos/contratos.component';
     AgrmodtierraComponent,
     AdministrarTierraComponent,
     AgrmodrecursosComponent,
-    ContratosComponent
+    ContratosComponent,
+    PerfiltierraComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -12,7 +12,7 @@ import { AgrmodtierraComponent } from './components/agrmodtierra/agrmodtierra.co
 import { AdministrarTierraComponent } from './components/administrar-tierra/administrar-tierra.component';
 import { AgrmodrecursosComponent } from './components/agrmodrecursos/agrmodrecursos.component';
 import { ContratosComponent } from './components/contratos/contratos.component';
-
+import { PerfiltierraComponent } from './components/perfiltierra/perfiltierra.component';
 
 import { AuthguardService } from './services/authguard.service';
 
@@ -28,6 +28,7 @@ const routes: Routes = [
   { path: 'administrartierra', component: AdministrarTierraComponent},
   { path: 'administrarrecursos', component: AgrmodrecursosComponent},
   { path: 'contratos', component: ContratosComponent},
+  { path: 'perfiltierra', component: PerfiltierraComponent},
 
   { path: '**', component: HomeComponent },
 
